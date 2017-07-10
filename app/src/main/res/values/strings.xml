@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FileManager</string>
+    <string name="title_toolbar">File Manager</string>
+    <string name="category">Category</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="microsd">MicroSD</string>
+    <string name="category_toolbar">Category</string>
+</resources>

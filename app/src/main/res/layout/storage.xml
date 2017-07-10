@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="4dp">
+
+    <TextView
+        android:id="@+id/txt_internal"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/internal_storage"
+        android:textColor="@color/colorStorageTitle"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_line_l"
+        android:layout_width="165dp"
+        android:layout_height="1dp"
+        android:layout_alignEnd="@id/txt_internal"
+        android:layout_alignRight="@id/txt_internal"
+        android:layout_below="@id/txt_internal"
+        android:layout_margin="8dp"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:id="@+id/txt_microsd"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/microsd"
+        android:textColor="@color/colorStorageTitle"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_line_r"
+        android:layout_width="165dp"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/txt_microsd"
+        android:layout_alignStart="@+id/txt_microsd"
+        android:layout_below="@id/txt_microsd"
+        android:layout_margin="8dp"
+        android:background="@color/colorLine" />
+
+    <com.example.hdt.filemanager.StorageCustomView
+        android:id="@+id/storage_internal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/storage_size"
+        android:layout_alignEnd="@+id/txt_internal"
+        android:layout_alignRight="@+id/txt_internal"
+        android:layout_below="@id/txt_line_l"
+        android:layout_margin="12dp"
+        app:viewTypeStorage="@drawable/asus_ic_storage_internal" />
+
+    <com.example.hdt.filemanager.StorageCustomView
+        android:id="@+id/storage_microsd"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/storage_size"
+        android:layout_alignLeft="@id/txt_microsd"
+        android:layout_alignStart="@id/txt_microsd"
+        android:layout_below="@id/txt_line_l"
+        android:layout_margin="12dp"
+        app:viewTypeStorage="@drawable/asus_ic_storage_sd" />
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/txt_category"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingStart="14dp"
+        android:text="@string/category"
+        android:textColor="@color/colorCategoryTitle"
+        android:textSize="20sp"
+        tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+    <ImageButton
+        android:id="@+id/btn_asus_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/asus_ic_category_btn"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txt_line_l"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_category"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorLine" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_videos"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/txt_line_l"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:typeFiles="Videos"
+        app:viewColor="@color/colorCategoryVideo"
+        app:viewTypeFiles="@drawable/asus_ic_video" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_images"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/txt_line_l"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@id/category_videos"
+        android:layout_toStartOf="@id/category_videos"
+        app:typeFiles="Images"
+        app:viewColor="@color/colorCategoryImage"
+        app:viewTypeFiles="@drawable/asus_ic_image" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_music"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/txt_line_l"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/category_videos"
+        android:layout_toRightOf="@id/category_videos"
+        app:typeFiles="Music"
+        app:viewColor="@color/colorCategoryMusic"
+        app:viewTypeFiles="@drawable/asus_ic_music" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_zip"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/category_videos"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/category_videos"
+        android:layout_toStartOf="@id/category_videos"
+        app:typeFiles="Compressed"
+        app:viewColor="@color/colorCategoryZip"
+        app:viewTypeFiles="@drawable/asus_ic_zip" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_favorites"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/category_videos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/category_zip"
+        android:layout_toRightOf="@id/category_zip"
+        app:typeFiles="Favorites"
+        app:viewColor="@color/colorCategoryFavorite"
+        app:viewTypeFiles="@drawable/asus_ic_favorite" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_apps"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/category_music"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/category_favorites"
+        android:layout_toRightOf="@id/category_favorites"
+        app:typeFiles="Apps"
+        app:viewColor="@color/colorCategoryApp"
+        app:viewTypeFiles="@drawable/asus_ic_app" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_documents"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/category_zip"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/category_videos"
+        android:layout_toStartOf="@id/category_videos"
+        app:typeFiles="Documents"
+        app:viewColor="@color/colorCategoryDocument"
+        app:viewTypeFiles="@drawable/asus_ic_document" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_download"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/category_favorites"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/category_documents"
+        android:layout_toRightOf="@id/category_documents"
+        app:typeFiles="Downloads"
+        app:viewColor="@color/colorCategoryDownload"
+        app:viewTypeFiles="@drawable/asus_ic_download" />
+
+    <com.example.hdt.filemanager.CategoryCustomView
+        android:id="@+id/category_recent"
+        android:layout_width="@dimen/category_width"
+        android:layout_height="@dimen/category_height"
+        android:layout_below="@id/category_apps"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/category_download"
+        android:layout_toRightOf="@id/category_download"
+        app:typeFiles="Recent"
+        app:viewColor="@color/colorCategoryRecent"
+        app:viewTypeFiles="@drawable/asus_ic_recent" />
+
+</RelativeLayout>

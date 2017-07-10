@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff007fa0</color>
+    <color name="colorPrimaryDark">#ff007fa0</color>
+    <color name="colorAccent">#ff505050</color>
+
+    <color name="colorBackgroundDark">#e4e2e2</color>
+    <color name="colorBackground">#ffffff</color>
+
+    <color name="colorLine">#88333333</color>
+
+    <color name="colorToolbarBackground">#fffefefe</color>
+    <color name="colorToolbar">#ff3e5776</color>
+    <color name="colorToolbarTitle">#ff007fa0</color>
+
+    <color name="colorCategoryTitle">#ff505050</color>
+    <color name="colorCategoryApp">#ff99c210</color>
+    <color name="colorCategoryZip">#ff4e2eb3</color>
+    <color name="colorCategoryDocument">#ff01989e</color>
+    <color name="colorCategoryDownload">#ff13acdf</color>
+    <color name="colorCategoryFavorite">#ff1071ae</color>
+    <color name="colorCategoryImage">#ffe53e6f</color>
+    <color name="colorCategoryMusic">#ffffaa30</color>
+    <color name="colorCategoryRecent">#ff822950</color>
+    <color name="colorCategoryVideo">#ff73077a</color>
+
+    <color name="colorStorageTitle">#ff505050</color>
+    <color name="colorProgressStorage">#ff39a6dd</color>
+    <color name="colorProgressStorageBg">#ffc8c8c8</color>
+    <color name="colorProgressStorageEnd">#ff2b5fa0</color>
+    <color name="colorDataStorageText">#ff3ecaef</color>
+
+    <color name="colorButtonText">#ff505050</color>
+
+</resources>
